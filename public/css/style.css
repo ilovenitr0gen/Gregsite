@@ -3,7 +3,8 @@
     src : url("../fonts/SourceCodePro-Regular.ttf");
 }
 :root {
-    background-image: url("../images/stars3.gif");
+    background-image: url("../images/greg in 4k.jpeg");
+    background-size: 500px 500px;
     --text-color: white;
     --content-spacing:5px;
 }
