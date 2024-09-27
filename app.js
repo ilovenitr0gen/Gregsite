@@ -8,13 +8,16 @@ const https = require('https');
 const fs = require('fs');
 
 let SSLKeysExist = true;
+let options;
+
 try {
     // This line is from the Node.js HTTPS documentation.
-    const options = {
+    options = {
         key: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/privkey.pem'),
         cert: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/fullchain.pem')
     };
-} catch {
+}
+catch {
     SSLKeysExist = false;
     console.log("Could not find SSL keys and establish HTTPS connection")
 }
