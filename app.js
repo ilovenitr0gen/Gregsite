@@ -1,4 +1,7 @@
 'use strict';
+
+const FUCKOFF = true;
+
 const express = require("express");
 
 const app = express();
@@ -6,12 +9,14 @@ const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
-// This line is from the Node.js HTTPS documentation.
-const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/fullchain.pem')
-};
 
+if(!FUCKOFF) {
+// This line is from the Node.js HTTPS documentation.
+    const options = {
+        key: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/fullchain.pem')
+    };
+}
 //EJS
 app.set('view engine', 'ejs');
 //css thing
@@ -27,5 +32,8 @@ app.get('/', function (req, res) {
 
 // Create an HTTP service.
 http.createServer(app).listen(80);
+
 // Create an HTTPS service identical to the HTTP service.
-https.createServer(options, app).listen(443);
+if (!FUCKOFF) {
+    https.createServer(options, app).listen(443);
+}
