@@ -1,7 +1,5 @@
 'use strict';
 
-const FUCKOFF = true;
-
 const express = require("express");
 
 const app = express();
@@ -9,14 +7,18 @@ const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
-
-if(!FUCKOFF) {
-// This line is from the Node.js HTTPS documentation.
+let SSLKeysExist = true;
+try {
+    // This line is from the Node.js HTTPS documentation.
     const options = {
         key: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/privkey.pem'),
         cert: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/fullchain.pem')
     };
+} catch {
+    SSLKeysExist = false;
+    console.log("Could not find SSL keys and establish HTTPS connection")
 }
+
 //EJS
 app.set('view engine', 'ejs');
 //css thing
@@ -34,6 +36,6 @@ app.get('/', function (req, res) {
 http.createServer(app).listen(80);
 
 // Create an HTTPS service identical to the HTTP service.
-if (!FUCKOFF) {
+if(SSLKeysExist) {
     https.createServer(options, app).listen(443);
 }
