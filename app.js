@@ -7,7 +7,7 @@ var port = process.env.PORT || 80;
 
 //EJS
 app.set('view engine', 'ejs');
-//idk
+//css thing
 app.use(express.static(__dirname + '/public'));
 
 //link pages to directories

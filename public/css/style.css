@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src : url("../fonts/SourceCodePro-Regular.ttf");
+}
+:root {
+    background-image: url("../images/stars3.gif");
+    --text-color: white;
+    --content-spacing:5px;
+}
+
 body {
-    background-color: lightblue;
+    text-align: center;
+
+    color: var(--text-color);
+    font-family: "Source Code Pro";
+}
+
+main {
+    background-color: black;
+    border:2px solid purple;
+    width: 74%;
+    margin: 0 auto;
+    padding:24px;
 }
