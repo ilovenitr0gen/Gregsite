@@ -2,8 +2,15 @@
 var express = require("express");
 
 var app = express();
+var https = require('https');
 var http = require('http');
-var port = process.env.PORT || 80;
+var fs = require('fs');
+
+// This line is from the Node.js HTTPS documentation.
+var options = {
+    key: fs.readFileSync('/etc/ssl/certs/client-key.pem'),
+    cert: fs.readFileSync('/etc/ssl/certs/client-cert.pem')
+};
 
 //EJS
 app.set('view engine', 'ejs');
@@ -18,4 +25,7 @@ app.get('/', function (req, res) {
 
 //run server
 
-var server = app.listen(port);
+// Create an HTTP service.
+http.createServer(app).listen(80);
+// Create an HTTPS service identical to the HTTP service.
+https.createServer(options, app).listen(443);
