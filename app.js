@@ -8,8 +8,8 @@ const fs = require('fs');
 
 // This line is from the Node.js HTTPS documentation.
 const options = {
-    key: fs.readFileSync('/etc/ssl/certs/client-key.pem'),
-    cert: fs.readFileSync('/etc/ssl/certs/client-cert.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/taciturn.media/fullchain.pem')
 };
 
 //EJS
