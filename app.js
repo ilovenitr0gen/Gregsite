@@ -1,13 +1,13 @@
 'use strict';
-var express = require("express");
+const express = require("express");
 
-var app = express();
-var http = require('http');
-var https = require('https');
-var fs = require('fs');
+const app = express();
+const http = require('http');
+const https = require('https');
+const fs = require('fs');
 
 // This line is from the Node.js HTTPS documentation.
-var options = {
+const options = {
     key: fs.readFileSync('/etc/ssl/certs/client-key.pem'),
     cert: fs.readFileSync('/etc/ssl/certs/client-cert.pem')
 };
