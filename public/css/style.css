@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Source Code Pro";
-    src : url("../fonts/SourceCodePro-Regular.ttf");
+    font-family: "Perry Gothic";
+    src : url("../fonts/PERRYGOT.TTF");
 }
 :root {
-    background-image: url("../images/greg in 4k.jpeg");
-    background-size: 500px 500px;
-    --text-color: white;
+    /*background-image: url("../images/entrance.png");*/
+    background-color: #FFFFED;
+    --text-color: black;
     --content-spacing:5px;
 }
 
@@ -13,13 +13,29 @@ body {
     text-align: center;
 
     color: var(--text-color);
-    font-family: "Source Code Pro";
+    font-family: "Perry Gothic";
 }
 
 main {
-    background-color: black;
-    border:2px solid purple;
-    width: 74%;
+    width: 60%;
     margin: 0 auto;
     padding:24px;
+}
+
+.border{
+    height: 1406px;
+    width: 100px;
+    position: absolute;
+    background: url('../images/border.png') 0px 0px / contain;
+}
+#b-left {
+    left: 14%;
+}
+#b-right {
+    right: 14%;
+    transform: scaleX(-1);
+}
+.border-photoframe {
+    border: 20px solid transparent;
+    border-image: url("../images/photoframe.png") 50 round;
 }
