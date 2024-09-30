@@ -3,8 +3,6 @@
     src : url("../fonts/PERRYGOT.TTF");
 }
 :root {
-
-
     --text-color: black;
     --content-spacing:5px;
 }
@@ -30,9 +28,8 @@ main {
 
     background-clip: padding-box;
 
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-image: url("../images/border.png") 200 round;
+    border: 100px solid transparent;
+    border-image: url("../images/borderFull.png") 200 round;
 
 }
 
