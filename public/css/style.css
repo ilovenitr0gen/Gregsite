@@ -19,16 +19,14 @@ body {
 }
 
 main {
-    max-width: 95fix %;
-    width: 1000px;
+    max-width: 60%;
+    /*width: 1000px;*/
 
     margin: 0 auto;
     padding:24px;
 
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-
-    box-sizing: border-box;
     border-image: url("../images/border.png") 200 round;
 
 }
