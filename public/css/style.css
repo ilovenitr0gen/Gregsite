@@ -3,8 +3,8 @@
     src : url("../fonts/PERRYGOT.TTF");
 }
 :root {
-    /*background-image: url("../images/entrance.png");*/
-    background-color: #FFFFED;
+
+
     --text-color: black;
     --content-spacing:5px;
 }
@@ -16,18 +16,29 @@ body {
     text-align: center;
 
     color: var(--text-color);
+    background-image: url("../images/stars3.gif");
+
     font-family: "Perry Gothic";
 }
 
 main {
+    background-color: #FFFFED;
+
     max-width: 800px;
 
-    margin: 20px auto 0;
+    margin: 0 auto 0;
+
+    background-clip: padding-box;
 
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-image: url("../images/border.png") 200 round;
 
+}
+
+header {
+    padding: 10px;
+    text-decoration: underline;
 }
 
 img {
