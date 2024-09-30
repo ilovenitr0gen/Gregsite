@@ -10,8 +10,9 @@
 }
 
 body {
-    width: 95%;
+    width: 98%;
 
+    margin: 0 auto;
     text-align: center;
 
     color: var(--text-color);
@@ -23,7 +24,6 @@ main {
     /*width: 1000px;*/
 
     margin: 0 auto;
-    padding:24px;
 
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
