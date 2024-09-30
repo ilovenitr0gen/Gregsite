@@ -42,28 +42,3 @@ img.framed {
     border: 20px solid transparent;
     border-image: url("../images/photoframe.png") 50 round;
 }
-
-div.border {
-    width: 10%;
-    height: 100%;
-
-    background-image: url("../images/border.png");
-    background-repeat: repeat-y;
-    background-size: contain;
-
-    overflow: auto;
-    overscroll-behavior: contain;
-}
-
-div.border.borderLeft {
-    float: left;
-
-    margin-left: -10%;
-}
-
-div.border.borderRight {
-    float: right;
-    transform: scaleX(-1);
-
-    margin-right: -10%;
-}
