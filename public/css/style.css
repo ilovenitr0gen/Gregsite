@@ -16,7 +16,7 @@ body {
     color: var(--text-color);
     background-image: url("../images/stars3.gif");
 
-    font-family: "Perry Gothic";
+    font-family: "Perry Gothic", serif;
 }
 
 main {
