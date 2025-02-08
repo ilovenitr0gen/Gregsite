@@ -21,7 +21,6 @@ body {
 
 .massive_turtle {
     font-size: 200px;
-    padding: 10px;
 
     animation:spin 4s linear infinite;
 }
