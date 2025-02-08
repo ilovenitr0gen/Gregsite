@@ -83,9 +83,8 @@ main {
 
 
 header {
-    padding: 10px;
+    padding: 20px;
     text-decoration: underline;
-    /*font-size: clamp(5px, 500px, clamp(0, 100vw, 1200px)*0.1);*/
     font-size: calc(clamp(0px, 100vw, 1200px) * 0.05);
     color: #fcc200;
 }
