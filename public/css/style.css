@@ -60,9 +60,13 @@ a:visited {
     top: 0;
     margin: auto;
     background-color: #FFFFED;
-    width: 100%;
+    max-width: 300px;
+    line-height: 45px;
+    border: 2px solid darkred;
+    padding: 2px;
     text-align: center;
     z-index: 1;
+
 }
 
 .topbar a {
