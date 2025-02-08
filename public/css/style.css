@@ -77,6 +77,7 @@ main {
     border: 100px solid transparent;
     border-image: url("../images/borderFull.png") 200 round;
 
+    display: flex;
     container-type: inline-size;
 }
 
