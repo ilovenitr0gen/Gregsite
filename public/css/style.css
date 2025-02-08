@@ -85,8 +85,7 @@ main {
 header {
     padding: 10px;
     text-decoration: underline;
-    font-size: 500px;
-    max-font-size: 3vw;
+    font-size: clamp(5px, 500px, 3vw);
     color: #fcc200;
 }
 
