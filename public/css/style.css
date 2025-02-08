@@ -77,7 +77,6 @@ main {
     border: 100px solid transparent;
     border-image: url("../images/borderFull.png") 200 round;
 
-    display: flex;
     container-type: inline-size;
 }
 
@@ -86,8 +85,8 @@ main {
 header {
     padding: 10px;
     text-decoration: underline;
-    font-size: 50%;
-    max-font-size: 500px;
+    font-size: 500px;
+    max-font-size: 50%px;
     color: #fcc200;
 }
 
