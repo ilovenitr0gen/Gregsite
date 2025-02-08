@@ -38,7 +38,7 @@ app.get('/gallery', function (req, res) {
 });
 
 app.get('/supersecret', function (req, res) {
-    res.render('videos/nggyu.webm');
+    res.redirect('videos/nggyu.webm');
 });
 
 //run server
