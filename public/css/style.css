@@ -78,6 +78,10 @@ main {
     border-image: url("../images/borderFull.png") 200 round;
 
     container-type: inline-size;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
