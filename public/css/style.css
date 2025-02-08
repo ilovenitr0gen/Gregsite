@@ -57,7 +57,7 @@ a:visited {
 
 .topbar {
     position: sticky;
-    top: -2px;
+    top: -5px;
     margin: auto;
     background-color: #FFFFED;
     width: 90%;
