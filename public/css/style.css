@@ -19,7 +19,7 @@ body {
     font-family: "Perry Gothic", serif;
 }
 
-a:link#selected {
+.selected {
     color: darkred;
 }
 
