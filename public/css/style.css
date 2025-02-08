@@ -84,11 +84,15 @@ main {
 header {
     padding: 10px;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 5%;
     color: #fcc200;
 }
 
 img {
+
+
+
+
     position: relative;
 
     width: 80%;
