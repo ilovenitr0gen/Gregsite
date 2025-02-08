@@ -20,7 +20,7 @@ body {
 }
 
 .massive_turtle {
-    font-size: 150px;
+    font-size: 300px;
 
     animation:spin 4s linear infinite;
 }
