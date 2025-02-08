@@ -11,12 +11,16 @@ body {
     width: 100%;
 
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 
     color: var(--text-color);
     background-image: url("../images/stars3.gif");
 
     font-family: "Perry Gothic", serif;
+}
+
+p{
+    text-align: left;
 }
 
 .massive_turtle {
