@@ -19,6 +19,10 @@ body {
     font-family: "Perry Gothic", serif;
 }
 
+.massive {
+    font-size: 300px;
+}
+
 .selected {
     color: darkred !important;
 }
