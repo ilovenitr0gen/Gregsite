@@ -85,7 +85,7 @@ main {
 header {
     padding: 20px;
     text-decoration: underline;
-    font-size: calc(clamp(0px, 100vw, 1200px) * 0.05);
+    font-size: calc(clamp(0px, 100vw, 1200px) * 0.045);
     color: #fcc200;
 }
 
