@@ -37,6 +37,10 @@ app.get('/gallery', function (req, res) {
     res.render('gallery/index.ejs');
 });
 
+app.get('/supersecret', function (req, res) {
+    res.render('supersecret/index.ejs');
+});
+
 //run server
 
 // Create an HTTP service.
