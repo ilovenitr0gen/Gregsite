@@ -19,6 +19,10 @@ body {
     font-family: "Perry Gothic", serif;
 }
 
+a:link#selected {
+    color: darkred;
+}
+
 a:link {
     color: goldenrod;
     background-color: transparent;
