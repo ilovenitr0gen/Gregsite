@@ -84,7 +84,8 @@ main {
 header {
     padding: 10px;
     text-decoration: underline;
-    font-size: 2.5vw;
+    display: flex;
+    max-font-size: 500px;
     color: #fcc200;
 }
 
