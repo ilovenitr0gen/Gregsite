@@ -33,6 +33,10 @@ app.get('/', function (req, res) {
     res.render('index.ejs');
 });
 
+app.get('/gallery', function (req, res) {
+    res.render('gallery/index.ejs');
+});
+
 //run server
 
 // Create an HTTP service.
