@@ -11,7 +11,7 @@ body {
     width: 100%;
 
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 
     color: var(--text-color);
     background-image: url("../images/stars3.gif");
