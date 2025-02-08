@@ -20,7 +20,7 @@ body {
 }
 
 .selected {
-    color: darkred;
+    color: darkred !important;
 }
 
 a:link {
@@ -29,14 +29,14 @@ a:link {
     text-decoration: none;
 }
 a:visited {
-    color: darkgoldenrod;
+    color: goldenrod;
     background-color: transparent;
     text-decoration: none;
 }
 
 .topbar {
     position: sticky;
-    top: 0px;
+    top: 0;
     margin: auto;
     background-color: #FFFFED;
     width: 100%;
