@@ -68,6 +68,7 @@ a:visited {
 main {
     background-color: #FFFFED;
 
+    width: 100vw;
     max-width: 1200px;
 
     margin: 0 auto 0;
@@ -78,6 +79,10 @@ main {
     border-image: url("../images/borderFull.png") 200 round;
 
     container-type: inline-size;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
