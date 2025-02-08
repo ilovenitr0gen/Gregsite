@@ -86,7 +86,7 @@ header {
     padding: 10px;
     text-decoration: underline;
     /*font-size: clamp(5px, 500px, 50vw);;*/
-    font-size: 50vw;
+    font-size: 1vw;
     color: #fcc200;
 }
 
