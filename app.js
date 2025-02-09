@@ -37,6 +37,10 @@ app.get('/gallery', function (req, res) {
     res.render('gallery/index.ejs');
 });
 
+app.get('/poems', function (req, res) {
+    res.render('poems/index.ejs');
+});
+
 app.get('/blog', function (req, res) {
     res.redirect('videos/nggyu.webm');
 });

@@ -105,6 +105,12 @@ header {
     color: #fcc200;
 }
 
+title {
+    padding: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
 img {
     position: relative;
 
