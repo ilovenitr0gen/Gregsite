@@ -105,10 +105,11 @@ header {
     color: #fcc200;
 }
 
-title {
+.title {
     padding: 10px;
     text-decoration: underline;
     text-align: center;
+    color: #fcc200;
 }
 
 img {
