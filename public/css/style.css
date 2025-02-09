@@ -57,12 +57,16 @@ a:visited {
 
 .topbar {
     position: sticky;
-    top: 0;
+    top: -5px;
     margin: auto;
     background-color: #FFFFED;
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
+    line-height: 45px;
+    border: 5px solid darkred;
     text-align: center;
     z-index: 1;
+
 }
 
 .topbar a {
