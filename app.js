@@ -37,6 +37,10 @@ app.get('/gallery', function (req, res) {
     res.render('gallery/index.ejs');
 });
 
+app.get('/gallery/albums/one', function (req, res) {
+    res.render('gallery/albums/one.ejs');
+});
+
 app.get('/poems', function (req, res) {
     res.render('poems/index.ejs');
 });
