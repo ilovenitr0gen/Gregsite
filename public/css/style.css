@@ -122,4 +122,5 @@ img {
 img.framed {
     border: 20px solid transparent;
     border-image: url("../images/photoframe.png") 50 round;
+    width: 50%;
 }
